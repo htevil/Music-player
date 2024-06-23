@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music-player</title>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+
+    <body>
+        
+        <div class="Music-player">
+            <audio src="" id="audio"></audio>
+
+            <div class="cover_img">
+                <img src="" alt="no_image" id="cover_img">
+            </div>
+ 
+            <div class="detail">
+                <div id="track-name">Song name</div>
+                <div id="track-artist">Astist</div>
+            </div>
+            
+            <div class="seek-bar__time">
+                <span id="current-time">00:00</span>
+                <span id="song-duration">00:00</span>
+            </div>
+                
+            <div class="seek-bar">
+                <input type="range" id="progress" value="50">
+            </div>
+                
+            <div class="buttons">
+                <button id="prev-track"><img src="scr\icon\Stop_and_play_fill-1.svg" alt="previous-track" /></button>
+                    
+                <button id="playpause-track">
+                    <img id="play-button" src="scr\icon\Play_fill.svg" alt="playpause-track" class="play-button active" />
+                <button>
+
+                <button id="next-track"><img src="scr\icon\Stop_and_play_fill_reverse.svg" alt="next-track" /></button>
+            </div>
+
+        </div>
+        <script src="data.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>

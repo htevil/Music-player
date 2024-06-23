@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+  
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+  
+body {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url("scr/img/bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.Music-player{
+    width: 360px;
+    height: fit-content;
+    background-color: #121826a1;
+    border: solid 1px #212936;
+    border-radius: 18px;
+    padding: 20px;
+    padding-bottom: 28px;
+}
+
+.cover_img{
+    width: 320px;
+    margin-bottom: 16px;
+}
+
+#cover_img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#track-name{
+    font-size: 16px;
+    font-weight: 500;
+    color: #E5E7EB;
+    margin-bottom: 4px;
+}
+
+#track-artist{
+    font-size: 12px;
+    font-weight: 400;
+    color: #4D5562;
+}
+
+.seek-bar__time{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 10px;
+    color: #4D5562;
+}
+
+.seek-bar{
+    margin-bottom: 36px;
+}
+  
+#progress{
+    -webkit-appearance: none;
+    background-color: #E5E7EB;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0px;
+    height: 4px;
+    cursor: pointer;
+    box-shadow: -320px 0 0 320px #C93B76;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev-track, #next-track{
+    background-color: transparent;
+}
+
+#playpause-track{
+    width: 50px;
+    height: 50px;
+    background-color: #C93B76;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#play-button{
+    position: relative;
+    top: 5%;
+    left: 0;
+}
+
+
+  
+
+
